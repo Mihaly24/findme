@@ -1,7 +1,8 @@
 document.getElementById('loginForm').addEventListener('submit', function(event) {
+    // Prevent the form from submitting the traditional way
     event.preventDefault();
 
-    const flagPart1 = 'VEk0MDR7a3Vt';
-
-    window.location.href = `page-one.html#${flagPart1}`;
+    // Redirect to the first directory named after the first flag part.
+    // The trailing slash is important!
+    window.location.href = 'VEk0MDR7a3Vt/';
 });
